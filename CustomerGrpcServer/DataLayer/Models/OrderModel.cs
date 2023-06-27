@@ -1,0 +1,12 @@
+﻿namespace CustomerGrpcServer.DataLayer.Models
+{
+    public class OrderModel
+    {
+        public OrderModel()
+        {
+            OrderItems = new List<OrderItemModel>();
+        }
+        public int Id { get; set; }
+        public List<OrderItemModel> OrderItems { get; set; }
+    }
+}

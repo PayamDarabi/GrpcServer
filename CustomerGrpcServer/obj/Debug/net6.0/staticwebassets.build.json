@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UOlPjIR3IoPbAngwhl+yT61ZDv+9uoaC7L4MXvLZ/bo=",
+  "Source": "CustomerGrpcServer",
+  "BasePath": "_content/CustomerGrpcServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
