@@ -8,34 +8,36 @@ namespace CustomerGrpcServer.ServiceLayer.Implementation
 {
     public class CustomerService : ICustomerService
     {
+        CustomerRepository _customerRepository;
         public CustomerService()
         {
+            _customerRepository = new CustomerRepository();
         }
 
         public void Add(CustomerDto customer)
         {
-            CustomerRepository.Add(customer.ToModel());
+            _customerRepository.Add(customer.ToModel());
         }
 
         public void Update(CustomerDto customer)
         {
-            CustomerRepository.Update(customer.ToModel());
+            _customerRepository.Update(customer.ToModel());
         }
 
         public void Delete(int id)
         {
-            CustomerRepository.Delete(id);
+            _customerRepository.Delete(id);
         }
 
         public CustomerDto Get(int id)
         {
-            var result = CustomerRepository.Get(id);
+            var result = _customerRepository.Get(id);
             return result.ToDto();
         }
 
         public List<CustomerDto> GetAll()
         {
-            var result = CustomerRepository.GetAll();
+            var result = _customerRepository.GetAll();
             return result.ConvertAll(x => x.ToDto());
         }
     }

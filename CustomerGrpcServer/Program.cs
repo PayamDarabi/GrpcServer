@@ -12,11 +12,14 @@ namespace CustomerGrpcServer
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddGrpc();
-            builder.Services.AddSingleton<ICustomerService, CustomerService>();
+            builder.Services.AddScoped<ICustomerService, CustomerService>();
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IOrderItemService, OrderItemService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
             var app = builder.Build();
 
             app.MapGrpcService<CustomerGrpcService>();
-            app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
+            app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client");
 
             app.Run();
         }

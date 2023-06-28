@@ -10,5 +10,5 @@ namespace CustomerGrpcServer.ServiceLayer.Abstraction
         void Delete(int id);
         CustomerDto Get(int id);
         List<CustomerDto> GetAll();
-    }
+    } 
 }

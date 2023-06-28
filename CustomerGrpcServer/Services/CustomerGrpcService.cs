@@ -1,19 +1,20 @@
-using CustomerGrpcServer;
 using CustomerGrpcServer.Mappers;
 using CustomerGrpcServer.ServiceLayer.Abstraction;
+using CustomerGrpcServer.ServiceLayer.Implementation;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
-using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace CustomerGrpcServer.Services
 {
     public class CustomerGrpcService : Customer.CustomerBase
     {
         private readonly ICustomerService _customerService;
+        private readonly ILogger<CustomerGrpcService> _logger;
 
-        public CustomerGrpcService(ICustomerService customerService)
+        public CustomerGrpcService(ICustomerService customerService, ILogger<CustomerGrpcService> logger)
         {
-            this._customerService = customerService;
+            _logger = logger;
+            _customerService = customerService;
         }
         public override Task<CustomerReply> Add(CustomerRequest request, ServerCallContext context)
         {
@@ -73,7 +74,7 @@ namespace CustomerGrpcServer.Services
             {
                 Customer = customer.ToResponse(),
                 IsSuccess = true,
-                Message = "Get customer successfull"
+                Message = "Get customer successful"
             });
         }
 
@@ -82,7 +83,7 @@ namespace CustomerGrpcServer.Services
             CustomersReply customersReply = new CustomersReply
             {
                 IsSuccess = true,
-                Message = "Get All Customers Successfull"
+                Message = "Get All Customers successful"
             };
             customersReply.Customers.AddRange(_customerService.GetAll().ConvertAll(x => x.ToResponse()));
             return Task.FromResult(customersReply);

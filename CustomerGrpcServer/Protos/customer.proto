@@ -5,9 +5,7 @@ option csharp_namespace = "CustomerGrpcServer";
 
 package CustomerGrpcServer;
 
-// The greeting service definition.
 service Customer {
-  // Sends a greeting
   rpc Add (CustomerRequest) returns (CustomerReply);
   rpc Update (CustomerRequest) returns (CustomerReply);
   rpc Delete (DeleteCustomerRequest) returns (DeleteCustomerReply);

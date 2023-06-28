@@ -2,15 +2,35 @@
 
 namespace CustomerGrpcServer.DataLayer.Repositories
 {
-    public static class CustomerRepository
+    public class CustomerRepository
     {
-        private static List<CustomerModel> Customers = new();
-        public static void Add(CustomerModel customer)
+        private static List<CustomerModel> Customers;
+        public CustomerRepository()
+        {
+            Customers = new()
+            {
+                new CustomerModel
+                {
+                    Id = 1,
+                    Age = 32,
+                    Name = "Payam Darabi"
+                },
+
+                new CustomerModel
+                {
+                    Id = 2,
+                    Age = 39,
+                    Name = "Seyyed Mehdi Hosseini"
+                }
+            };
+        }
+
+        public void Add(CustomerModel customer)
         {
             Customers.Add(customer);
         }
 
-        public static void Update(CustomerModel customerModel)
+        public void Update(CustomerModel customerModel)
         {
             var customer = Customers.FirstOrDefault(x => x.Id == customerModel.Id);
             if (customer != null)
@@ -20,7 +40,7 @@ namespace CustomerGrpcServer.DataLayer.Repositories
             }
         }
 
-        public static void Delete(int id)
+        public void Delete(int id)
         {
             var customer = Customers.FirstOrDefault(x => x.Id == id);
             if (customer != null)
@@ -29,13 +49,13 @@ namespace CustomerGrpcServer.DataLayer.Repositories
             }
         }
 
-        public static CustomerModel Get(int id)
+        public CustomerModel Get(int id)
         {
             var customer = Customers.FirstOrDefault(x => x.Id == id);
             return customer;
         }
 
-        public static List<CustomerModel> GetAll()
+        public List<CustomerModel> GetAll()
         {
             return Customers;
         }
