@@ -12,6 +12,7 @@ namespace CustomerGrpcServer.Mappers
             {
                 Id = orderRequest.Id,
                 CreateDate = DateTime.UtcNow,
+                CustomerId = orderRequest.CustomerId,
                 OrderItems = orderRequest.OrderItems.Select(x => x.ToModel()).ToList()
             };
         }
@@ -21,6 +22,7 @@ namespace CustomerGrpcServer.Mappers
             return new OrderModel
             {
                 Id = orderDto.Id,
+                CustomerId = orderDto.CustomerId,
                 CreateDate = DateTime.UtcNow,
                 OrderItems = orderDto.OrderItems.ConvertAll(x => x.ToModel())
             };
@@ -31,6 +33,7 @@ namespace CustomerGrpcServer.Mappers
             return new OrderDto
             {
                 Id = orderModel.Id,
+                CustomerId = orderModel.CustomerId,
                 CreateDate = orderModel.CreateDate,
                 OrderItems = orderModel.OrderItems.ConvertAll(x => x.ToDto())
             };
@@ -41,6 +44,7 @@ namespace CustomerGrpcServer.Mappers
             return new OrderDto
             {
                 Id = orderRequest.Id,
+                CustomerId = orderRequest.CustomerId,
                 OrderItems = orderRequest.OrderItems.Select(x => x.ToDto()).ToList()
             };
         }
@@ -49,6 +53,7 @@ namespace CustomerGrpcServer.Mappers
             var response = new OrderResponse
             {
                 Id = orderDto.Id,
+                CustomerId = orderDto.CustomerId,
                 CreateDate = Timestamp.FromDateTime(orderDto.CreateDate),
             };
             response.OrderItems.Add(orderDto.OrderItems.ConvertAll(x => x.ToResponse()));

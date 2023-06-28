@@ -22,8 +22,7 @@ message DeleteOrderItemRequest {
 
 message OrderItemRequest {
         int32 Id = 1;
-        int32 CustomerId = 2;
-        int32 ProductId = 3;
+        int32 ProductId = 2;
 }
 
 message OrderItemReply {
@@ -45,6 +44,5 @@ message DeleteOrderItemReply {
 
 message OrderItemResponse{
         int32 Id = 1;
-        int32 CustomerId = 2;
-        int32 ProductId = 3;
+        int32 ProductId = 2;
 }

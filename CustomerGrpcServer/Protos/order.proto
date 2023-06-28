@@ -25,7 +25,8 @@ message DeleteOrderRequest {
 
 message OrderRequest {
   int32 Id = 1;
-  repeated OrderItemRequest OrderItems = 2;
+  int32 CustomerId = 2;
+  repeated OrderItemRequest OrderItems = 3;
 }
 
 message OrdersReply {
@@ -47,6 +48,7 @@ message DeleteOrderReply {
 
 message OrderResponse{
   int32 Id = 1; 
-  google.protobuf.Timestamp CreateDate = 2;
-  repeated OrderItemResponse OrderItems = 3;
+  int32 CustomerId = 2;
+  google.protobuf.Timestamp CreateDate = 3;
+  repeated OrderItemResponse OrderItems = 4;
 }
