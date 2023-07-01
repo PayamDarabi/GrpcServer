@@ -10,6 +10,7 @@ namespace CustomerGrpcServer.Mappers
             return new OrderItemModel
             {
                 Id = orderItemRequest.Id,
+                
                 ProductId = orderItemRequest.ProductId,
             };
         }

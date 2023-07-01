@@ -19,6 +19,8 @@ namespace CustomerGrpcServer
             var app = builder.Build();
 
             app.MapGrpcService<CustomerGrpcService>();
+            app.MapGrpcService<OrderGrpcService>();
+            app.MapGrpcService<ProductGrpcService>();
             app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client");
 
             app.Run();

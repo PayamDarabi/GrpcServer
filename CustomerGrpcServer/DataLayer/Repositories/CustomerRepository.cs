@@ -7,22 +7,25 @@ namespace CustomerGrpcServer.DataLayer.Repositories
         private static List<CustomerModel> Customers;
         public CustomerRepository()
         {
-            Customers = new()
+            if (Customers == null)
             {
-                new CustomerModel
+                Customers = new()
                 {
-                    Id = 1,
-                    Age = 32,
-                    Name = "Payam Darabi"
-                },
+                    new CustomerModel
+                    {
+                        Id = 1,
+                        Age = 32,
+                        Name = "Payam Darabi"
+                    },
 
-                new CustomerModel
-                {
-                    Id = 2,
-                    Age = 39,
-                    Name = "Seyyed Mehdi Hosseini"
-                }
-            };
+                    new CustomerModel
+                    {
+                        Id = 2,
+                        Age = 39,
+                        Name = "Seyyed Mehdi Hosseini"
+                    }
+                };
+            }
         }
 
         public void Add(CustomerModel customer)

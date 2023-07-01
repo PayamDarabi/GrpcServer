@@ -8,16 +8,19 @@ namespace CustomerGrpcServer.Services
     public class OrderGrpcService : Order.OrderBase
     {
         private readonly IOrderService _orderService;
+        private readonly IOrderItemService _orderItemService;
         private readonly ILogger<OrderGrpcService> _logger;
 
-        public OrderGrpcService(IOrderService orderService, ILogger<OrderGrpcService> logger)
+        public OrderGrpcService(IOrderService orderService, IOrderItemService orderItemService, ILogger<OrderGrpcService> logger)
         {
             _logger = logger;
             _orderService = orderService;
+            _orderItemService = orderItemService;
         }
 
         public override Task<OrderReply> Add(OrderRequest request, ServerCallContext context)
         {
+            _orderItemService.AddRange(request.OrderItems.Select(x => x.ToDto()).ToList());
             _orderService.Add(request.ToDto());
             return Task.FromResult(new OrderReply
             {
@@ -32,7 +35,10 @@ namespace CustomerGrpcServer.Services
 
         public override Task<OrderReply> Update(OrderRequest request, ServerCallContext context)
         {
+            _orderItemService.DeleteByOrderId(request.Id);
+            _orderItemService.AddRange(request.OrderItems.Select(x => x.ToDto()).ToList());
             _orderService.Update(request.ToDto());
+            
             return Task.FromResult(new OrderReply
             {
                 Order = new OrderResponse
@@ -46,6 +52,7 @@ namespace CustomerGrpcServer.Services
 
         public override Task<DeleteOrderReply> Delete(DeleteOrderRequest request, ServerCallContext context)
         {
+            _orderItemService.DeleteByOrderId(request.Id);
             _orderService.Delete(request.Id);
             return Task.FromResult(new DeleteOrderReply
             {
@@ -81,9 +88,11 @@ namespace CustomerGrpcServer.Services
                 IsSuccess = true,
                 Message = "GetAll orders successful"
             };
-            ordersReply.Orders.AddRange(_orderService.GetAll().ConvertAll(x => x.ToResponse()));
+            
+            var orders = _orderService.GetAll().ConvertAll(x => x.ToResponse());
+            ordersReply.Orders.AddRange(orders);
             return Task.FromResult(ordersReply);
         }
     }
-    
+
 }

@@ -9,5 +9,8 @@ namespace CustomerGrpcServer.ServiceLayer.Abstraction
         void Delete(int id);
         OrderItemDto Get(int id);
         List<OrderItemDto> GetAll();
+        void AddRange(List<OrderItemDto> orderItems);
+        void DeleteByOrderId(int orderId);
+        List<OrderItemDto> GetByOrderId(int orderId);
     } 
 }

@@ -14,6 +14,11 @@ namespace CustomerGrpcServer.DataLayer.Repositories
             OrderItems.Add(orderItem);
         }
 
+        public void AddRange(List<OrderItemModel> orderItems)
+        {
+            OrderItems.AddRange(orderItems);
+        }
+
         public void Update(OrderItemModel orderItemModel)
         {
             var orderItem = OrderItems.FirstOrDefault(x => x.Id == orderItemModel.Id);
@@ -33,10 +38,20 @@ namespace CustomerGrpcServer.DataLayer.Repositories
             }
         }
 
+        public void DeleteByOrderId(int orderId)
+        {
+            OrderItems.RemoveAll(x => x.OrderId == orderId);
+        }
+
         public OrderItemModel Get(int id)
         {
             var orderItem = OrderItems.FirstOrDefault(x => x.Id == id);
             return orderItem;
+        }
+        public List<OrderItemModel> GetByOrderId(int orderId)
+        {
+            var orderItems = OrderItems.Where(x => x.OrderId == orderId).ToList();
+            return orderItems;
         }
 
         public List<OrderItemModel> GetAll()

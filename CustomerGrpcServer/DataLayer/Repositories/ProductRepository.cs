@@ -8,21 +8,24 @@ namespace CustomerGrpcServer.DataLayer.Repositories
 
         public ProductRepository()
         {
-            Products = new()
+            if (Products == null)
             {
-                new ProductModel
+                Products = new()
                 {
-                    Id = 1,
-                    Name = "Galaxy A10",
-                    Price = 3000000
-                },
-                new ProductModel
-                {
-                    Id = 1,
-                    Name = "Galaxy A14",
-                    Price = 6520000
-                }
-            };
+                    new ProductModel
+                    {
+                        Id = 1,
+                        Name = "Galaxy A10",
+                        Price = 3000000
+                    },
+                    new ProductModel
+                    {
+                        Id = 2,
+                        Name = "Galaxy A14",
+                        Price = 6520000
+                    }
+                };
+            }
         }
 
         public void Add(ProductModel product)

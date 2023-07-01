@@ -27,36 +27,36 @@ namespace CustomerGrpcServer {
             "ChZQcm90b3Mvb3JkZXJJdGVtLnByb3RvEhJDdXN0b21lckdycGNTZXJ2ZXIa",
             "G2dvb2dsZS9wcm90b2J1Zi9lbXB0eS5wcm90byIhChNHZXRPcmRlckl0ZW1S",
             "ZXF1ZXN0EgoKAklkGAEgASgFIiQKFkRlbGV0ZU9yZGVySXRlbVJlcXVlc3QS",
-            "CgoCSWQYASABKAUiMQoQT3JkZXJJdGVtUmVxdWVzdBIKCgJJZBgBIAEoBRIR",
-            "CglQcm9kdWN0SWQYAiABKAUibgoOT3JkZXJJdGVtUmVwbHkSOAoJT3JkZXJJ",
-            "dGVtGAEgASgLMiUuQ3VzdG9tZXJHcnBjU2VydmVyLk9yZGVySXRlbVJlc3Bv",
-            "bnNlEhEKCUlzU3VjY2VzcxgCIAEoCBIPCgdNZXNzYWdlGAMgASgJIm8KD09y",
-            "ZGVySXRlbXNSZXBseRI4CglDdXN0b21lcnMYASADKAsyJS5DdXN0b21lckdy",
-            "cGNTZXJ2ZXIuT3JkZXJJdGVtUmVzcG9uc2USEQoJSXNTdWNjZXNzGAIgASgI",
-            "Eg8KB01lc3NhZ2UYAyABKAkiOgoURGVsZXRlT3JkZXJJdGVtUmVwbHkSEQoJ",
-            "SXNTdWNjZXNzGAEgASgIEg8KB01lc3NhZ2UYAiABKAkiMgoRT3JkZXJJdGVt",
-            "UmVzcG9uc2USCgoCSWQYASABKAUSEQoJUHJvZHVjdElkGAIgASgFMqsDCglP",
-            "cmRlckl0ZW0STwoDQWRkEiQuQ3VzdG9tZXJHcnBjU2VydmVyLk9yZGVySXRl",
-            "bVJlcXVlc3QaIi5DdXN0b21lckdycGNTZXJ2ZXIuT3JkZXJJdGVtUmVwbHkS",
-            "UgoGVXBkYXRlEiQuQ3VzdG9tZXJHcnBjU2VydmVyLk9yZGVySXRlbVJlcXVl",
-            "c3QaIi5DdXN0b21lckdycGNTZXJ2ZXIuT3JkZXJJdGVtUmVwbHkSXgoGRGVs",
-            "ZXRlEiouQ3VzdG9tZXJHcnBjU2VydmVyLkRlbGV0ZU9yZGVySXRlbVJlcXVl",
-            "c3QaKC5DdXN0b21lckdycGNTZXJ2ZXIuRGVsZXRlT3JkZXJJdGVtUmVwbHkS",
-            "UgoDR2V0EicuQ3VzdG9tZXJHcnBjU2VydmVyLkdldE9yZGVySXRlbVJlcXVl",
-            "c3QaIi5DdXN0b21lckdycGNTZXJ2ZXIuT3JkZXJJdGVtUmVwbHkSRQoGR2V0",
-            "QWxsEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GiMuQ3VzdG9tZXJHcnBjU2Vy",
-            "dmVyLk9yZGVySXRlbXNSZXBseUIVqgISQ3VzdG9tZXJHcnBjU2VydmVyYgZw",
-            "cm90bzM="));
+            "CgoCSWQYASABKAUiQgoQT3JkZXJJdGVtUmVxdWVzdBIKCgJJZBgBIAEoBRIP",
+            "CgdPcmRlcklkGAIgASgFEhEKCVByb2R1Y3RJZBgDIAEoBSJuCg5PcmRlckl0",
+            "ZW1SZXBseRI4CglPcmRlckl0ZW0YASABKAsyJS5DdXN0b21lckdycGNTZXJ2",
+            "ZXIuT3JkZXJJdGVtUmVzcG9uc2USEQoJSXNTdWNjZXNzGAIgASgIEg8KB01l",
+            "c3NhZ2UYAyABKAkibwoPT3JkZXJJdGVtc1JlcGx5EjgKCUN1c3RvbWVycxgB",
+            "IAMoCzIlLkN1c3RvbWVyR3JwY1NlcnZlci5PcmRlckl0ZW1SZXNwb25zZRIR",
+            "CglJc1N1Y2Nlc3MYAiABKAgSDwoHTWVzc2FnZRgDIAEoCSI6ChREZWxldGVP",
+            "cmRlckl0ZW1SZXBseRIRCglJc1N1Y2Nlc3MYASABKAgSDwoHTWVzc2FnZRgC",
+            "IAEoCSJDChFPcmRlckl0ZW1SZXNwb25zZRIKCgJJZBgBIAEoBRIPCgdPcmRl",
+            "cklkGAIgASgFEhEKCVByb2R1Y3RJZBgDIAEoBTKrAwoJT3JkZXJJdGVtEk8K",
+            "A0FkZBIkLkN1c3RvbWVyR3JwY1NlcnZlci5PcmRlckl0ZW1SZXF1ZXN0GiIu",
+            "Q3VzdG9tZXJHcnBjU2VydmVyLk9yZGVySXRlbVJlcGx5ElIKBlVwZGF0ZRIk",
+            "LkN1c3RvbWVyR3JwY1NlcnZlci5PcmRlckl0ZW1SZXF1ZXN0GiIuQ3VzdG9t",
+            "ZXJHcnBjU2VydmVyLk9yZGVySXRlbVJlcGx5El4KBkRlbGV0ZRIqLkN1c3Rv",
+            "bWVyR3JwY1NlcnZlci5EZWxldGVPcmRlckl0ZW1SZXF1ZXN0GiguQ3VzdG9t",
+            "ZXJHcnBjU2VydmVyLkRlbGV0ZU9yZGVySXRlbVJlcGx5ElIKA0dldBInLkN1",
+            "c3RvbWVyR3JwY1NlcnZlci5HZXRPcmRlckl0ZW1SZXF1ZXN0GiIuQ3VzdG9t",
+            "ZXJHcnBjU2VydmVyLk9yZGVySXRlbVJlcGx5EkUKBkdldEFsbBIWLmdvb2ds",
+            "ZS5wcm90b2J1Zi5FbXB0eRojLkN1c3RvbWVyR3JwY1NlcnZlci5PcmRlckl0",
+            "ZW1zUmVwbHlCFaoCEkN1c3RvbWVyR3JwY1NlcnZlcmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::CustomerGrpcServer.GetOrderItemRequest), global::CustomerGrpcServer.GetOrderItemRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CustomerGrpcServer.DeleteOrderItemRequest), global::CustomerGrpcServer.DeleteOrderItemRequest.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::CustomerGrpcServer.OrderItemRequest), global::CustomerGrpcServer.OrderItemRequest.Parser, new[]{ "Id", "ProductId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::CustomerGrpcServer.OrderItemRequest), global::CustomerGrpcServer.OrderItemRequest.Parser, new[]{ "Id", "OrderId", "ProductId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CustomerGrpcServer.OrderItemReply), global::CustomerGrpcServer.OrderItemReply.Parser, new[]{ "OrderItem", "IsSuccess", "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CustomerGrpcServer.OrderItemsReply), global::CustomerGrpcServer.OrderItemsReply.Parser, new[]{ "Customers", "IsSuccess", "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CustomerGrpcServer.DeleteOrderItemReply), global::CustomerGrpcServer.DeleteOrderItemReply.Parser, new[]{ "IsSuccess", "Message" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::CustomerGrpcServer.OrderItemResponse), global::CustomerGrpcServer.OrderItemResponse.Parser, new[]{ "Id", "ProductId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::CustomerGrpcServer.OrderItemResponse), global::CustomerGrpcServer.OrderItemResponse.Parser, new[]{ "Id", "OrderId", "ProductId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -437,6 +437,7 @@ namespace CustomerGrpcServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public OrderItemRequest(OrderItemRequest other) : this() {
       id_ = other.id_;
+      orderId_ = other.orderId_;
       productId_ = other.productId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -457,8 +458,19 @@ namespace CustomerGrpcServer {
       }
     }
 
+    /// <summary>Field number for the "OrderId" field.</summary>
+    public const int OrderIdFieldNumber = 2;
+    private int orderId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int OrderId {
+      get { return orderId_; }
+      set {
+        orderId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "ProductId" field.</summary>
-    public const int ProductIdFieldNumber = 2;
+    public const int ProductIdFieldNumber = 3;
     private int productId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int ProductId {
@@ -482,6 +494,7 @@ namespace CustomerGrpcServer {
         return true;
       }
       if (Id != other.Id) return false;
+      if (OrderId != other.OrderId) return false;
       if (ProductId != other.ProductId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -490,6 +503,7 @@ namespace CustomerGrpcServer {
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
+      if (OrderId != 0) hash ^= OrderId.GetHashCode();
       if (ProductId != 0) hash ^= ProductId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -511,8 +525,12 @@ namespace CustomerGrpcServer {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
-      if (ProductId != 0) {
+      if (OrderId != 0) {
         output.WriteRawTag(16);
+        output.WriteInt32(OrderId);
+      }
+      if (ProductId != 0) {
+        output.WriteRawTag(24);
         output.WriteInt32(ProductId);
       }
       if (_unknownFields != null) {
@@ -528,8 +546,12 @@ namespace CustomerGrpcServer {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
-      if (ProductId != 0) {
+      if (OrderId != 0) {
         output.WriteRawTag(16);
+        output.WriteInt32(OrderId);
+      }
+      if (ProductId != 0) {
+        output.WriteRawTag(24);
         output.WriteInt32(ProductId);
       }
       if (_unknownFields != null) {
@@ -543,6 +565,9 @@ namespace CustomerGrpcServer {
       int size = 0;
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      }
+      if (OrderId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(OrderId);
       }
       if (ProductId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProductId);
@@ -560,6 +585,9 @@ namespace CustomerGrpcServer {
       }
       if (other.Id != 0) {
         Id = other.Id;
+      }
+      if (other.OrderId != 0) {
+        OrderId = other.OrderId;
       }
       if (other.ProductId != 0) {
         ProductId = other.ProductId;
@@ -583,6 +611,10 @@ namespace CustomerGrpcServer {
             break;
           }
           case 16: {
+            OrderId = input.ReadInt32();
+            break;
+          }
+          case 24: {
             ProductId = input.ReadInt32();
             break;
           }
@@ -605,6 +637,10 @@ namespace CustomerGrpcServer {
             break;
           }
           case 16: {
+            OrderId = input.ReadInt32();
+            break;
+          }
+          case 24: {
             ProductId = input.ReadInt32();
             break;
           }
@@ -1339,6 +1375,7 @@ namespace CustomerGrpcServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public OrderItemResponse(OrderItemResponse other) : this() {
       id_ = other.id_;
+      orderId_ = other.orderId_;
       productId_ = other.productId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1359,8 +1396,19 @@ namespace CustomerGrpcServer {
       }
     }
 
+    /// <summary>Field number for the "OrderId" field.</summary>
+    public const int OrderIdFieldNumber = 2;
+    private int orderId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int OrderId {
+      get { return orderId_; }
+      set {
+        orderId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "ProductId" field.</summary>
-    public const int ProductIdFieldNumber = 2;
+    public const int ProductIdFieldNumber = 3;
     private int productId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int ProductId {
@@ -1384,6 +1432,7 @@ namespace CustomerGrpcServer {
         return true;
       }
       if (Id != other.Id) return false;
+      if (OrderId != other.OrderId) return false;
       if (ProductId != other.ProductId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1392,6 +1441,7 @@ namespace CustomerGrpcServer {
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
+      if (OrderId != 0) hash ^= OrderId.GetHashCode();
       if (ProductId != 0) hash ^= ProductId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1413,8 +1463,12 @@ namespace CustomerGrpcServer {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
-      if (ProductId != 0) {
+      if (OrderId != 0) {
         output.WriteRawTag(16);
+        output.WriteInt32(OrderId);
+      }
+      if (ProductId != 0) {
+        output.WriteRawTag(24);
         output.WriteInt32(ProductId);
       }
       if (_unknownFields != null) {
@@ -1430,8 +1484,12 @@ namespace CustomerGrpcServer {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
-      if (ProductId != 0) {
+      if (OrderId != 0) {
         output.WriteRawTag(16);
+        output.WriteInt32(OrderId);
+      }
+      if (ProductId != 0) {
+        output.WriteRawTag(24);
         output.WriteInt32(ProductId);
       }
       if (_unknownFields != null) {
@@ -1445,6 +1503,9 @@ namespace CustomerGrpcServer {
       int size = 0;
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      }
+      if (OrderId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(OrderId);
       }
       if (ProductId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProductId);
@@ -1462,6 +1523,9 @@ namespace CustomerGrpcServer {
       }
       if (other.Id != 0) {
         Id = other.Id;
+      }
+      if (other.OrderId != 0) {
+        OrderId = other.OrderId;
       }
       if (other.ProductId != 0) {
         ProductId = other.ProductId;
@@ -1485,6 +1549,10 @@ namespace CustomerGrpcServer {
             break;
           }
           case 16: {
+            OrderId = input.ReadInt32();
+            break;
+          }
+          case 24: {
             ProductId = input.ReadInt32();
             break;
           }
@@ -1507,6 +1575,10 @@ namespace CustomerGrpcServer {
             break;
           }
           case 16: {
+            OrderId = input.ReadInt32();
+            break;
+          }
+          case 24: {
             ProductId = input.ReadInt32();
             break;
           }

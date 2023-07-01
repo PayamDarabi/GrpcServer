@@ -27,6 +27,10 @@ namespace CustomerGrpcServer.Mappers
 
         public static CustomerDto ToDto(this CustomerModel customerModel)
         {
+            if (customerModel == null)
+            {
+                return null;
+            }
             return new CustomerDto
             {
                 Age = customerModel.Age,
