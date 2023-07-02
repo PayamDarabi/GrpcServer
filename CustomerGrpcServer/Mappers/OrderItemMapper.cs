@@ -10,7 +10,7 @@ namespace CustomerGrpcServer.Mappers
             return new OrderItemModel
             {
                 Id = orderItemRequest.Id,
-                
+                OrderId = orderItemRequest.OrderId,
                 ProductId = orderItemRequest.ProductId,
             };
         }
@@ -20,6 +20,7 @@ namespace CustomerGrpcServer.Mappers
             return new OrderItemModel
             {
                 Id = orderItemDto.Id,
+                OrderId = orderItemDto.OrderId,
                 ProductId = orderItemDto.ProductId
             };
         }
@@ -29,6 +30,7 @@ namespace CustomerGrpcServer.Mappers
             return new OrderItemDto
             {
                 ProductId = orderItemModel.ProductId,
+                OrderId = orderItemModel.OrderId,
                 Id = orderItemModel.Id,
             };
         }
@@ -38,15 +40,17 @@ namespace CustomerGrpcServer.Mappers
             return new OrderItemDto
             {
                 ProductId = orderItemRequest.ProductId,
+                OrderId = orderItemRequest.OrderId,
                 Id = orderItemRequest.Id,
             };
         }
-        
+
         public static OrderItemResponse ToResponse(this OrderItemDto orderItemDto)
         {
             return new OrderItemResponse
             {
                 Id = orderItemDto.Id,
+                OrderId = orderItemDto.OrderId,
                 ProductId = orderItemDto.ProductId,
             };
         }

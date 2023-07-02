@@ -7,7 +7,10 @@ namespace CustomerGrpcServer.DataLayer.Repositories
         private static List<OrderItemModel> OrderItems;
         public OrderItemRepository()
         {
-            OrderItems = new();
+            if (OrderItems == null)
+            {
+                OrderItems = new();
+            }
         }
         public void Add(OrderItemModel orderItem)
         {

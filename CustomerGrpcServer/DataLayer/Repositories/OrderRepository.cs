@@ -7,7 +7,10 @@ namespace CustomerGrpcServer.DataLayer.Repositories
         private static List<OrderModel> Orders;
         public OrderRepository()
         {
-            Orders = new();
+            if (Orders == null)
+            {
+                Orders = new();
+            }
         }
 
         public void Add(OrderModel order)
@@ -27,10 +30,10 @@ namespace CustomerGrpcServer.DataLayer.Repositories
 
         public void Delete(int id)
         {
-            var product = Orders.FirstOrDefault(x => x.Id == id);
-            if (product != null)
+            var order = Orders.FirstOrDefault(x => x.Id == id);
+            if (order != null)
             {
-                Orders.Remove(product);
+                Orders.Remove(order);
             }
         }
 
