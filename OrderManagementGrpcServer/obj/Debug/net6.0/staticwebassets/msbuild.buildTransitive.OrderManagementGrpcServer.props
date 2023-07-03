@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\OrderManagementGrpcServer.props" />
+</Project>

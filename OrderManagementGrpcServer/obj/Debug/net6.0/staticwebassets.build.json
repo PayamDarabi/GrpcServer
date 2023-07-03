@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cCmqtSgt99Tl7aS874QYub3gtjpRlFj+gLcRIVPAwqc=",
+  "Source": "OrderManagementGrpcServer",
+  "BasePath": "_content/OrderManagementGrpcServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
