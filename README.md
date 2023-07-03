@@ -71,7 +71,9 @@ Visual Studio 2022 with the ASP.NET and web development workload.
    "applicationUrl": "http://localhost:5213;https://localhost:7199",
    ```
 3. Run the project
-   
+
+   ![Capture](https://github.com/PayamDarabi/GrpcServer/assets/8627007/06c39725-8de5-423e-9213-538aea4b0c30)
+
 ## Usage
 
 This code shows how to create an ASP.NET Core gRPC Server. At the end, you'll have a gRPC service that responses to clients that need its functionalities.
