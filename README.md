@@ -41,7 +41,7 @@ The <b> Service </b> structure of this project is as follows:
 
 <b> OrderManagementGrpcServer </b> project files and structure:
 
-Protos: defines the gRPC and is used to generate the gRPC server assets. For more information </br>
+Protos: defines the gRPC and is used to generate the gRPC server assets. </br>
 Services folder: Contains the implementation of the services. </br>
 appSettings.json: Contains configuration data such as the protocol used by Kestrel. </br>
 Program.cs: The entry point for the gRPC service. For more information, see .NET Generic Host in ASP.NET Core. 
