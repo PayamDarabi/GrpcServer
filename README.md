@@ -1,12 +1,14 @@
 # GrpcServer
 <br/>
 <p align="center">
-  <h3 align="center">gRPC Server</h3>
-
-  <p align="center">
+   <h1 align="center">gRPC Server</h1>
+   <p align="center">
     An Awesome Example For gRPC Server
     <br/>
     <br/>
+  </p>
+  <p align="center">  
+    <img  style="center" src=https://github.com/PayamDarabi/GrpcServer/assets/8627007/7c0d7308-6dbf-43f8-9f0a-61692e59cffc/>
   </p>
 </p>
 
@@ -33,9 +35,9 @@ This project includes the complete implementation of a grpc server in which thre
 This project includes the complete implementation of a grpc server in which three different services have been created to meet the business needs of the project (here is a shopping cart and order registration system).
 The service structure of this project is as follows:
 
-Customer service (to perform CRUD operations on the customer entity)
-Product service (to perform CRUD operations on the product entity)
-Order service (to perform CRUD operations on the order entity and order items (shopping cart))
+<b> Customer service </b> (to perform CRUD operations on the customer entity) </br>
+<b> Product service </b> (to perform CRUD operations on the product entity) </br>
+<b> Order service </b> (to perform CRUD operations on the order entity and order items (shopping cart)) </br>
 
 You can use this example to implement the specific services you want, or by participating in the project, you can add more features to the project.
 
@@ -76,7 +78,7 @@ This code shows how to create an ASP.NET Core gRPC Server. At the end, you'll ha
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/PayamDarabi/ReadME-Generator/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
+* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/PayamDarabi/GrpcServer/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
 * Please make sure you check your spelling and grammar.
 * Create individual PR for each suggestion.
   
