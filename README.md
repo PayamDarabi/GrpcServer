@@ -46,7 +46,7 @@ The <b> Service </b> structure of this project is as follows:
 <b> appSettings.json </b>: Contains configuration data such as the protocol used by Kestrel. </br>
 <b> Program.cs </b>: The entry point for the gRPC service. </br>
 
-note that:
+<b> Note that </b>
 For more simplicity, the service and repository layers are placed in the same project and in the corresponding folders. Also, instead of connecting to the database, static lists are used for storage in the repository layer. You can use this example to implement the specific services you want, or by participating in the project, you can add more features to the project.
 
 ## Built With
