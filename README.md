@@ -39,6 +39,14 @@ The <b> Service </b> structure of this project is as follows:
 <b> Product service </b> (to perform CRUD operations on the product entity) </br>
 <b> Order service </b> (to perform CRUD operations on the order entity and order items (shopping cart)) </br>
 
+<b> OrderManagementGrpcServer </b> project files and structure:
+
+Protos: defines the gRPC and is used to generate the gRPC server assets. For more information
+Services folder: Contains the implementation of the services.
+appSettings.json: Contains configuration data such as the protocol used by Kestrel.
+Program.cs: The entry point for the gRPC service. For more information, see .NET Generic Host in ASP.NET Core.
+Code that configures app behavior.
+
 note that:
 For more simplicity, the service and repository layers are placed in the same project and in the corresponding folders. Also, instead of connecting to the database, static lists are used for storage in the repository layer. You can use this example to implement the specific services you want, or by participating in the project, you can add more features to the project.
 
