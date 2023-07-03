@@ -25,7 +25,6 @@
 * [Contributing](#contributing)
 * [License](#license)
 * [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
 
 ## About The Project
 
@@ -33,13 +32,15 @@ gRPC is a cross-platform open source high performance remote procedure call fram
 This project includes the complete implementation of a grpc server in which three different services have been created to meet the business needs of the project, which is a shopping cart and order registration system. You can use this example to implement the examples you want.
 
 This project includes the complete implementation of a grpc server in which three different services have been created to meet the business needs of the project (here is a shopping cart and order registration system).
-The service structure of this project is as follows:
+
+The <b> Service </b> structure of this project is as follows:
 
 <b> Customer service </b> (to perform CRUD operations on the customer entity) </br>
 <b> Product service </b> (to perform CRUD operations on the product entity) </br>
 <b> Order service </b> (to perform CRUD operations on the order entity and order items (shopping cart)) </br>
 
-You can use this example to implement the specific services you want, or by participating in the project, you can add more features to the project.
+note that:
+For more simplicity, the service and repository layers are placed in the same project and in the corresponding folders. Also, instead of connecting to the database, static lists are used for storage in the repository layer. You can use this example to implement the specific services you want, or by participating in the project, you can add more features to the project.
 
 ## Built With
 
