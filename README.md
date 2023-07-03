@@ -1,4 +1,4 @@
-# GrpcServer
+# Order Management GrpcServer
 <br/>
 <p align="center">
    <h1 align="center">gRPC Server</h1>
