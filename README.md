@@ -32,22 +32,6 @@ This project includes the complete implementation of a grpc server in which thre
 
 This project includes the complete implementation of a grpc server in which three different services have been created to meet the business needs of the project (here is a shopping cart and order registration system).
 
-The <b> Service </b> structure of this project is as follows:
-
-<b> Customer service </b> (to perform CRUD operations on the customer entity) </br>
-<b> Product service </b> (to perform CRUD operations on the product entity) </br>
-<b> Order service </b> (to perform CRUD operations on the order entity and order items (shopping cart)) </br>
-
-<b> OrderManagementGrpcServer </b> project files and structure:
-
-<b> Protos folder </b>: defines the gRPC and is used to generate the gRPC server assets. </br>
-<b> Services folder </b>: Contains the implementation of the services. </br>
-<b> appSettings.json </b>: Contains configuration data such as the protocol used by Kestrel. </br>
-<b> Program.cs </b>: The entry point for the gRPC service. </br>
-
-<b> Note that </b>
-For more simplicity, the service and repository layers are placed in the same project and in the corresponding folders. Also, instead of connecting to the database, static lists are used for storage in the repository layer. You can use this example to implement the specific services you want, or by participating in the project, you can add more features to the project.
-
 ## Built With
 
 Technologies that used in this project
@@ -84,6 +68,22 @@ Visual Studio 2022 with the ASP.NET and web development workload.
 
 This code shows how to create an ASP.NET Core gRPC Server. At the end, you'll have a gRPC service that responses to clients that need its functionalities.
 
+The <b> Service </b> structure of this project is as follows:
+
+<b> Customer service </b> (to perform CRUD operations on the customer entity) </br>
+<b> Product service </b> (to perform CRUD operations on the product entity) </br>
+<b> Order service </b> (to perform CRUD operations on the order entity and order items (shopping cart)) </br>
+
+<b> OrderManagementGrpcServer </b> project files and structure:
+
+<b> Protos folder </b>: defines the gRPC and is used to generate the gRPC server assets. </br>
+<b> Services folder </b>: Contains the implementation of the services. </br>
+<b> appSettings.json </b>: Contains configuration data such as the protocol used by Kestrel. </br>
+<b> Program.cs </b>: The entry point for the gRPC service. </br>
+
+<b> Note that </b>
+For more simplicity, the service and repository layers are placed in the same project and in the corresponding folders. Also, instead of connecting to the database, static lists are used for storage in the repository layer. You can use this example to implement the specific services you want, or by participating in the project, you can add more features to the project.
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -98,6 +98,9 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+## Give a Star! ⭐
+If you like or are using this project please give it a star. Thanks!
 
 ## Authors
 
